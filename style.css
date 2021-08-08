@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
+:root{
+    --container_width: 1000px;
+    --container_height: 841px;
+    --background_color:#5F81B2;
+    --text_color_white: #FFFFFF;
+}
+body{
+ background: var(--background_color);
+ padding: 3% 14.7%;
+ font-family: 'Nunito', sans-serif;
+}
+.container{
+    max-width: var(--container_width);
+    min-height: var(--container_height);
+    border: 0.1px solid black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.title__logo{
+    margin: 3px 0px 0px 0px;
+    letter-spacing: -0.5px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--text_color_white);
+}
+.title___by-name{
+    margin: -1px 0px 0px 0px;
+    color: var(--text_color_white);
+    letter-spacing: -0.6px;
+}
+.create-task_btn{
+    width: 287px;
+    height: 40px;
+    border-radius: 4px;
+    padding-top: 3px;
+    font-size: 17px;
+    margin-top: 26px;
+    background: #F5D57F;
+    border: none;
+}
+.task_list{
+    margin-top: 85px;
+    letter-spacing: -0.5px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
