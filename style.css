@@ -11,7 +11,7 @@
 }
 body{
     background: var(--background_color);
-    padding: 3.1% 15%;
+    padding: 3.6% 15.3%;
     position: relative;
     margin: 0px;
 }
@@ -138,16 +138,16 @@ body{
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 110%;
     margin: 0px;
     background: rgba(17, 17, 17, 0.5);
 }
 .modal__content{
-    margin-left: 32.4%;
-    margin-top: 23%;
-    margin-right: 32.5%;
-    max-width: 458px;
-    min-height: 312px;
+    margin-left: 32.7%;
+    margin-top: 23.5%;
+    margin-right: 32.7%;
+    max-width: 459px;
+    min-height: 310px;
     background: #FFFBE3;
     border-radius: 4px;
     position: relative;
@@ -174,7 +174,7 @@ body{
 }
 .modal__title-input{
     max-width: var(--modal_inputs_width);
-    height: 40px;
+    height: 36px;
     margin-top: -1px;
     background: #FFFFFF;
     border: 1px solid #5F81B2;
