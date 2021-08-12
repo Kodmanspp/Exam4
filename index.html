@@ -20,14 +20,16 @@
         </div>
         <h2 class="task_list">СПИСОК ЗАДАЧ</h2>
         <div class="main">
-
             <div class="task">
                 <div class="task__content">
                     <h3 class="task__title">Заголовок задачи</h3>
                     <p class="task__text">
-                        Более длинное описание задачи на несолько строчек, может быть даже на 4. Более длинное описание
-                        задачи на несолько строчек, может быть даже на 4
+                        Короткое описание задачи
                     </p>
+                    <div class="change">
+                        <img src="./assets/change.png" alt="" class="change__img">
+                        <p class="text__change">Изменить</p>
+                    </div>
                 </div>
                 <div class="task__input">
                     <div class="task__checkbox">
@@ -42,41 +44,6 @@
 
 
 
-
-
-
-            <div class="task">
-                <div class="task__content">
-                    <h3 class="task__title">Заголовок задачи</h3>
-                    <p class="task__text">
-                        Короткое описание
-                    </p>
-                </div>
-                <div class="task__input">
-                    <div class="task__checkbox">
-                        <img class="task__checkbox_img" src="./assets/check.png"></img>
-                    </div>
-                    <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
-                </div>
-            </div>
-
-
-
-
-            <div class="task">
-                <div class="task__content">
-                    <h3 class="task__title">Заголовок задачи без описания</h3>
-                    <p class="task__text">
-
-                    </p>
-                </div>
-                <div class="task__input">
-                    <div class="task__checkbox">
-                        <img class="task__checkbox_img" src="./assets/check.png"></img>
-                    </div>
-                    <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
-                </div>
-            </div>
 
 
 
@@ -84,8 +51,12 @@
                 <div class="task__content">
                     <h3 class="task__title">Заголовок задачи</h3>
                     <p class="task__text">
-                        Короткое описание <br> на 2 строчки
+                       Более длинное описание задачи на несолько строчек, может быть даже на три
                     </p>
+                    <div class="change">
+                        <img src="./assets/change.png" alt="" class="change__img">
+                        <p class="text__change">Изменить</p>
+                    </div>
                 </div>
                 <div class="task__input">
                     <div class="task__checkbox">
@@ -94,16 +65,20 @@
                     <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
                 </div>
             </div>
+
 
 
 
             <div class="task">
                 <div class="task__content">
-                    <h3 class="task__title">Более длинный заголовок задачи на несолько строчек, может быть даже на 3.
-                        Более длинный заголовок</h3>
+                    <h3 class="task__title">Без описания</h3>
                     <p class="task__text">
 
                     </p>
+                    <div class="change">
+                        <img src="./assets/change.png" alt="" class="change__img">
+                        <p class="text__change">Изменить</p>
+                    </div>
                 </div>
                 <div class="task__input">
                     <div class="task__checkbox">
@@ -115,21 +90,9 @@
 
 
 
-            <div class="task">
-                <div class="task__content">
-                    <h3 class="task__title">Заголовок задачи</h3>
-                    <p class="task__text">
-                        Более длинное описание задачи на несолько строчек, может быть даже на 4. Более длинное описание
-                        задачи на несолько строчек, может быть даже на 4
-                    </p>
-                </div>
-                <div class="task__input">
-                    <div class="task__checkbox">
-                        <img class="task__checkbox_img" src="./assets/check.png"></img>
-                    </div>
-                    <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
-                </div>
-            </div>
+
+
+
 
 
         </div>
@@ -149,8 +112,16 @@
             </form>
         </div>
     </div>
+    <div class="modal-delete">
+        <div class="modal-delete__content">
+            <div class="modal-delete__title">Вы уверены что хотите удалить задачу навсегда?</div>
+            <input type="button" value="Удалить" class="modal-delete__btn"></ш>
+            <img src="./assets/close_modal.png" class="modal__close modal__close__2"></img>
+            <input type="button" value="Отмена" class="modal-delete__close_btn"></input>
+        </div>
+    </div>
 
-    <script src="./main.js"></script>
+    <script src="./main.js"></script>+
 </body>
 
 </html>
