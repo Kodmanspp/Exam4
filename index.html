@@ -19,39 +19,13 @@
             <button class="create-task_btn">Создать новую задачу</button>
         </div>
         <h2 class="task_list">СПИСОК ЗАДАЧ</h2>
-        <div class="main">
-            <div class="task">
-                <div class="task__content">
-                    <h3 class="task__title">Заголовок задачи</h3>
-                    <p class="task__text">
-                        Короткое описание задачи
-                    </p>
-                    <div class="change">
-                        <img src="./assets/change.png" alt="" class="change__img">
-                        <p class="text__change">Изменить</p>
-                    </div>
-                </div>
-                <div class="task__input">
-                    <div class="task__checkbox">
-                        <img class="task__checkbox_img" src="./assets/check.png"></img>
-                    </div>
-                    <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
-                </div>
-            </div>
-
-
-
-
-
-
-
-
+        <div class="main">  
 
             <div class="task">
                 <div class="task__content">
                     <h3 class="task__title">Заголовок задачи</h3>
                     <p class="task__text">
-                       Более длинное описание задачи на несолько строчек, может быть даже на три
+        
                     </p>
                     <div class="change">
                         <img src="./assets/change.png" alt="" class="change__img">
@@ -64,29 +38,8 @@
                     </div>
                     <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
                 </div>
-            </div>
 
-
-
-
-            <div class="task">
-                <div class="task__content">
-                    <h3 class="task__title">Без описания</h3>
-                    <p class="task__text">
-
-                    </p>
-                    <div class="change">
-                        <img src="./assets/change.png" alt="" class="change__img">
-                        <p class="text__change">Изменить</p>
-                    </div>
-                </div>
-                <div class="task__input">
-                    <div class="task__checkbox">
-                        <img class="task__checkbox_img" src="./assets/check.png"></img>
-                    </div>
-                    <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
-                </div>
-            </div>
+           
 
 
 
@@ -103,15 +56,16 @@
             <div class="modal__title">Создать задачу</div>
             <img src="./assets/close_modal.png" class="modal__close">
             <form class="modal__form" action="">
-                <input placeholder="Заголовок задачи" type="text" name="" id="" class="modal__title-input"
+                <input placeholder="Заголовок задачи" type="text" class="modal__title-input"
                     value="Заголовок задачи">
                 <textarea placeholder="описание" rows="20" class="modal__text"></textarea>
                 <p class="modal__error"></p>
-                <input type="button" name="" id="" class="modal__save-task_btn" value="Сохранить">
-                <input type="button" name="" id="" class="modal__close_btn" value="Отмена">
+                <input type="button"  class="modal__save-task_btn" value="Сохранить">
+                <input type="button"  class="modal__close_btn" value="Отмена">
             </form>
         </div>
     </div>
+
     <div class="modal-delete">
         <div class="modal-delete__content">
             <div class="modal-delete__title">Вы уверены что хотите удалить задачу навсегда?</div>
@@ -121,7 +75,26 @@
         </div>
     </div>
 
-    <script src="./main.js"></script>+
+
+    <div class="taskZero">
+        <div class="task__content">
+            <h3 class="task__title">Заголовок задачи</h3>
+            <p class="task__text">
+
+            </p>
+            <div class="change">
+                <img src="./assets/change.png" alt="" class="change__img">
+                <p class="text__change">Изменить</p>
+            </div>
+        </div>
+        <div class="task__input">
+            <div class="task__checkbox">
+                <img class="task__checkbox_img" src="./assets/check.png"></img>
+            </div>
+            <img class="task__delete_btn" src="./assets/delete__btn.png" alt="">
+        </div>
+    </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
