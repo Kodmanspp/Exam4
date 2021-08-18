@@ -14,7 +14,6 @@ body{
     padding: 3.6% 15.3%;
     position: relative;
     margin: 0px;
-    
 }
 .container{
     max-width: var(--container_width);
@@ -254,7 +253,6 @@ body{
 }
 .modal__error{
     max-width: var(--modal_inputs_width);
-    display: none;
     margin: 5px;
     margin-bottom: 0px;
     font-weight: 600;
