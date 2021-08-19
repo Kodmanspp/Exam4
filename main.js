@@ -85,7 +85,12 @@ createTask.addEventListener('click', function () {
     };
     clearInput();
     createTask_btn.onclick = createTask_Save;
-
+    window.onclick = function(event){
+        if(event.target == createTaskModal){
+            createTaskModal.style.visibility = 'hidden';
+            createTaskModal.style.opacity = 0;
+        }
+    }
 })
 
 function createTask_Save() {
@@ -173,6 +178,12 @@ function deleteTasks_Btn() {
             modalClose_Btn.onclick = function () {
                 closeModal(deleteTaskModal);
             };
+            window.onclick = function(event){
+                if(event.target == deleteTaskModal){
+                    deleteTaskModal.style.visibility = 'hidden';
+                    deleteTaskModal.style.opacity = 0;
+                }
+            }
             const deleteTask = document.querySelector('.modal-delete__btn');
             deleteTask.onclick = () => {
                 tasks.splice(i, 1);
@@ -206,6 +217,12 @@ function taskChange() {
                 changeTask_Save(i);
                 
             };
+            window.onclick = function(event){
+                if(event.target == createTaskModal){
+                    createTaskModal.style.visibility = 'hidden';
+                    createTaskModal.style.opacity = 0;
+                }
+            }
             
         }
     }
