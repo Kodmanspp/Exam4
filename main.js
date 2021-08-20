@@ -110,7 +110,7 @@ function createTask_Save() {
         return;
     }
     else if (textInput.value === undefined) {
-        text = '';
+        element.text = '';
     }
     element.title = titleInput.value;
     element.text = textInput.value;
@@ -212,7 +212,10 @@ function taskChange() {
             closeModal_btn.onclick = function () {
                 closeModal(createTaskModal);
             };
-            clearInput();
+            const titleInput = document.querySelector(".modal__title-input");
+            const textInput = document.querySelector(".modal__text");
+            titleInput.value = tasks[i].title;
+            textInput.value = tasks[i].text;
             createTask_btn.onclick = function(){
                 changeTask_Save(i);
                 
